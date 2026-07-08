@@ -1,27 +1,50 @@
 {
   "cli": {
-    "version": ">= 13.0.0"
+    "version": ">= 13.0.0",
+    "appVersionSource": "remote"
   },
   "build": {
     "development": {
       "developmentClient": true,
       "distribution": "internal",
+      "channel": "development",
       "android": {
-        "buildType": "apk"
+        "buildType": "apk",
+        "gradleCommand": ":app:assembleDebug"
+      },
+      "ios": {
+        "simulator": true
+      },
+      "env": {
+        "APP_ENV": "development"
       }
     },
     "preview": {
       "distribution": "internal",
+      "channel": "preview",
       "android": {
         "buildType": "apk"
+      },
+      "ios": {
+        "distribution": "internal"
+      },
+      "env": {
+        "APP_ENV": "preview"
       }
     },
     "production": {
+      "channel": "production",
+      "autoIncrement": true,
       "android": {
-        "buildType": "app-bundle"
+        "buildType": "app-bundle",
+        "gradleCommand": ":app:bundleRelease"
       },
       "ios": {
-        "autoIncrement": true
+        "autoIncrement": true,
+        "distribution": "store"
+      },
+      "env": {
+        "APP_ENV": "production"
       }
     }
   },
@@ -29,11 +52,13 @@
     "production": {
       "android": {
         "serviceAccountKeyPath": "./google-services.json",
-        "track": "internal"
+        "track": "internal",
+        "releaseStatus": "draft"
       },
       "ios": {
         "appleId": "",
-        "ascAppId": ""
+        "ascAppId": "",
+        "appleTeamId": ""
       }
     }
   }

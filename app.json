@@ -27,7 +27,8 @@
         "backgroundColor": "#0A0A0A"
       },
       "package": "com.evento.evex",
-      "supportsRTL": true
+      "supportsRTL": true,
+      "permissions": ["com.google.android.gms.permission.AD_ID"]
     },
     "web": {
       "favicon": "./assets/favicon.png",
@@ -36,7 +37,14 @@
     "plugins": [
       "expo-router",
       "expo-localization",
-      "expo-font"
+      "expo-font",
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-xxxxxxxxxxxxxxxx~yyyyyyyyyy",
+          "iosAppId": "ca-app-pub-xxxxxxxxxxxxxxxx~zzzzzzzzzz"
+        }
+      ]
     ],
     "extra": {
       "eas": {
