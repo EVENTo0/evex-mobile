@@ -1,0 +1,63 @@
+{
+  "app": {
+    "name": "EVEX",
+    "tagline": "Your All-in-One Fitness Platform"
+  },
+  "tabs": {
+    "dashboard": "Home",
+    "workout": "Workout",
+    "lab": "Lab",
+    "coach": "Coach",
+    "profile": "Profile"
+  },
+  "dashboard": {
+    "welcome": "Welcome",
+    "todayProgress": "Today's Progress",
+    "activeGoals": "Active Goals",
+    "upcomingWorkouts": "Upcoming Workouts",
+    "weeklyStats": "Weekly Stats",
+    "calories": "Calories",
+    "minutes": "Minutes",
+    "sessions": "Sessions"
+  },
+  "workout": {
+    "title": "Workout",
+    "startWorkout": "Start Workout",
+    "history": "History",
+    "plans": "Plans",
+    "exercises": "Exercises",
+    "sets": "Sets",
+    "reps": "Reps",
+    "weight": "Weight",
+    "duration": "Duration",
+    "rest": "Rest"
+  },
+  "lab": {
+    "title": "Lab",
+    "bloodWork": "Blood Work",
+    "metrics": "Metrics",
+    "trends": "Trends"
+  },
+  "coach": {
+    "title": "Coach",
+    "aiCoach": "AI Coach",
+    "chat": "Chat",
+    "plans": "Plans"
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "email": "Email",
+    "password": "Password",
+    "forgotPassword": "Forgot Password?"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Retry",
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "back": "Back"
+  }
+}
