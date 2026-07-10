@@ -38,5 +38,9 @@ ios/
 google-services.json
 GoogleService-Info.plist
 
+# Credentials (sensitive)
+credentials/*.json
+!credentials/.gitkeep
+
 # EAS
 .easignore

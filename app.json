@@ -2,6 +2,7 @@
   "expo": {
     "name": "EVEX",
     "slug": "evex-mobile",
+    "owner": "evento0",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -27,8 +28,10 @@
         "backgroundColor": "#0A0A0A"
       },
       "package": "com.evento.evex",
+      "versionCode": 1,
       "supportsRTL": true,
-      "permissions": ["com.google.android.gms.permission.AD_ID"]
+      "permissions": ["com.google.android.gms.permission.AD_ID"],
+      "googleServicesFile": "./google-services.json"
     },
     "web": {
       "favicon": "./assets/favicon.png",
